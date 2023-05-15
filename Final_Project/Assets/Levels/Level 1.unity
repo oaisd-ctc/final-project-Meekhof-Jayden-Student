@@ -3620,7 +3620,7 @@ GameObject:
   - component: {fileID: 972405045}
   - component: {fileID: 972405044}
   - component: {fileID: 972405043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Castle(level1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
