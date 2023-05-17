@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
         myFeetCollider = GetComponent<BoxCollider2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(!isAlive){return;}
@@ -73,6 +72,8 @@ public class PlayerMovement : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("isDead");
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
+
 }
